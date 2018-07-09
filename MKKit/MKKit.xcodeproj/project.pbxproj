@@ -23,6 +23,7 @@
 		7DE2444420F3A68D008F0B19 /* S4SAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2444320F3A68D008F0B19 /* S4SAlert.swift */; };
 		7DE2444620F3A6DA008F0B19 /* String+S4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2444520F3A6DA008F0B19 /* String+S4S.swift */; };
 		7DE2444920F3A710008F0B19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE2444820F3A710008F0B19 /* UIKit.framework */; };
+		7DE2444B20F3A987008F0B19 /* S4STableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2444A20F3A987008F0B19 /* S4STableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		7DE2444320F3A68D008F0B19 /* S4SAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S4SAlert.swift; sourceTree = "<group>"; };
 		7DE2444520F3A6DA008F0B19 /* String+S4S.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+S4S.swift"; sourceTree = "<group>"; };
 		7DE2444820F3A710008F0B19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7DE2444A20F3A987008F0B19 /* S4STableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S4STableViewController.swift; sourceTree = "<group>"; };
 		88839D4EAC9D7033257FB684 /* Pods_MKKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4814EC1DBC250DE83C1FB6C /* Pods-MKKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MKKit/Pods-MKKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				7DE2444320F3A68D008F0B19 /* S4SAlert.swift */,
 				7DE2443F20F3A549008F0B19 /* GARegexHelper.swift */,
 				7DE2444120F3A626008F0B19 /* Validate.swift */,
+				7DE2444A20F3A987008F0B19 /* S4STableViewController.swift */,
 			);
 			path = MKKit;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				7DE2444020F3A54A008F0B19 /* GARegexHelper.swift in Sources */,
 				7DE2444220F3A626008F0B19 /* Validate.swift in Sources */,
 				7DE2444420F3A68D008F0B19 /* S4SAlert.swift in Sources */,
+				7DE2444B20F3A987008F0B19 /* S4STableViewController.swift in Sources */,
 				7DE2440B20F39781008F0B19 /* ViewController.swift in Sources */,
 				7DE2443C20F3999F008F0B19 /* UIView+Extension.swift in Sources */,
 				7DE2444620F3A6DA008F0B19 /* String+S4S.swift in Sources */,
