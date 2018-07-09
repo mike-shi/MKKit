@@ -17,6 +17,7 @@ typealias ButtonClickFunc = (UIButton)->Void
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.backgroundColor = UIColor.ViewBackgroundColor()
 //        navigationController?.navigationBar.isTranslucent = false
 //        navigationController?.navigationBar.setBackgroundImage(UIImage(color: UIColor.primaryBlueColor()), for: .default)
     }

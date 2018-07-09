@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ViewController: S4STableViewController {
     
     let arr: [String] = [""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView.init()
     }
 
 
