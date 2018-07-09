@@ -32,8 +32,8 @@ extension String {
         
         let normalText: NSString = textStr as NSString
         let size = CGSize.init(width: width, height: 1000)
-        let dic = NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
-        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [String : AnyObject], context:nil).size
+        let dic = NSDictionary(object: font, forKey: kCTFontAttributeName as! NSCopying)
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [NSAttributedStringKey : AnyObject], context:nil).size
         return stringSize.height
     }
     
@@ -43,9 +43,9 @@ extension String {
         
         let size = CGSize.init(width: 1000, height: height)
         
-        let dic = NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
+        let dic = NSDictionary(object: font, forKey: kCTFontAttributeName as! NSCopying)
         
-        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [String : AnyObject], context:nil).size
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [NSAttributedStringKey : AnyObject], context:nil).size
         
         return stringSize.width
         
