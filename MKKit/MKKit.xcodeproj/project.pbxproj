@@ -27,10 +27,10 @@
 		7DE2444E20F3AC2E008F0B19 /* MapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2444D20F3AC2E008F0B19 /* MapTool.swift */; };
 		7DE2445020F3ACFF008F0B19 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2444F20F3ACFF008F0B19 /* DatePickerDialog.swift */; };
 		7DE2445420F3ADA9008F0B19 /* UIViewController+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2445220F3ADA8008F0B19 /* UIViewController+Help.m */; };
-		7DE2445620F3AE01008F0B19 /* UIColor+S4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2445520F3AE01008F0B19 /* UIColor+S4S.swift */; };
 		7DE2445820F3AFC0008F0B19 /* PopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2445720F3AFBF008F0B19 /* PopMenu.swift */; };
 		7DE2445A20F3B13E008F0B19 /* RegexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2445920F3B13E008F0B19 /* RegexViewController.swift */; };
 		7DE2445C20F3B148008F0B19 /* RegexViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE2445B20F3B148008F0B19 /* RegexViewController.storyboard */; };
+		7DE2445E20F3B73B008F0B19 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2445D20F3B73B008F0B19 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +79,10 @@
 		7DE2445120F3ADA7008F0B19 /* MKKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		7DE2445220F3ADA8008F0B19 /* UIViewController+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Help.m"; sourceTree = "<group>"; };
 		7DE2445320F3ADA8008F0B19 /* UIViewController+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Help.h"; sourceTree = "<group>"; };
-		7DE2445520F3AE01008F0B19 /* UIColor+S4S.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+S4S.swift"; path = "../../../../cbb/CheBaobao/Extension/UIColor+S4S.swift"; sourceTree = "<group>"; };
 		7DE2445720F3AFBF008F0B19 /* PopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenu.swift; sourceTree = "<group>"; };
 		7DE2445920F3B13E008F0B19 /* RegexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexViewController.swift; sourceTree = "<group>"; };
 		7DE2445B20F3B148008F0B19 /* RegexViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegexViewController.storyboard; sourceTree = "<group>"; };
+		7DE2445D20F3B73B008F0B19 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		88839D4EAC9D7033257FB684 /* Pods_MKKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4814EC1DBC250DE83C1FB6C /* Pods-MKKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MKKit/Pods-MKKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				7DE2445720F3AFBF008F0B19 /* PopMenu.swift */,
-				7DE2445520F3AE01008F0B19 /* UIColor+S4S.swift */,
 				7DE2445320F3ADA8008F0B19 /* UIViewController+Help.h */,
 				7DE2445220F3ADA8008F0B19 /* UIViewController+Help.m */,
 				7DE2444F20F3ACFF008F0B19 /* DatePickerDialog.swift */,
@@ -184,6 +183,7 @@
 				7DE2443F20F3A549008F0B19 /* GARegexHelper.swift */,
 				7DE2444A20F3A987008F0B19 /* S4STableViewController.swift */,
 				7DE2445120F3ADA7008F0B19 /* MKKit-Bridging-Header.h */,
+				7DE2445D20F3B73B008F0B19 /* UIColor+Extension.swift */,
 			);
 			path = MKKit;
 			sourceTree = "<group>";
@@ -414,12 +414,12 @@
 			files = (
 				7DE2444E20F3AC2E008F0B19 /* MapTool.swift in Sources */,
 				7DE2443A20F39955008F0B19 /* AppConfig.swift in Sources */,
-				7DE2445620F3AE01008F0B19 /* UIColor+S4S.swift in Sources */,
 				7DE2444020F3A54A008F0B19 /* GARegexHelper.swift in Sources */,
 				7DE2445420F3ADA9008F0B19 /* UIViewController+Help.m in Sources */,
 				7DE2445820F3AFC0008F0B19 /* PopMenu.swift in Sources */,
 				7DE2444220F3A626008F0B19 /* Validate.swift in Sources */,
 				7DE2444420F3A68D008F0B19 /* S4SAlert.swift in Sources */,
+				7DE2445E20F3B73B008F0B19 /* UIColor+Extension.swift in Sources */,
 				7DE2445020F3ACFF008F0B19 /* DatePickerDialog.swift in Sources */,
 				7DE2444B20F3A987008F0B19 /* S4STableViewController.swift in Sources */,
 				7DE2440B20F39781008F0B19 /* ViewController.swift in Sources */,
