@@ -14,6 +14,9 @@
 		7DE2441320F39783008F0B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE2441120F39783008F0B19 /* LaunchScreen.storyboard */; };
 		7DE2441E20F39783008F0B19 /* MKKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2441D20F39783008F0B19 /* MKKitTests.swift */; };
 		7DE2442920F39783008F0B19 /* MKKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2442820F39783008F0B19 /* MKKitUITests.swift */; };
+		7DE2443A20F39955008F0B19 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2443920F39955008F0B19 /* AppConfig.swift */; };
+		7DE2443C20F3999F008F0B19 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2443B20F3999F008F0B19 /* UIView+Extension.swift */; };
+		7DE2443E20F39B60008F0B19 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2443D20F39B60008F0B19 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7DE2442420F39783008F0B19 /* MKKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE2442820F39783008F0B19 /* MKKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKKitUITests.swift; sourceTree = "<group>"; };
 		7DE2442A20F39783008F0B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE2443920F39955008F0B19 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		7DE2443B20F3999F008F0B19 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7DE2443D20F39B60008F0B19 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		7DE2440720F39781008F0B19 /* MKKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DE2443820F39921008F0B19 /* Help */,
 				7DE2443720F398EC008F0B19 /* DemoVC */,
 				7DE2443620F398D9008F0B19 /* MKKit */,
 				7DE2440820F39781008F0B19 /* AppDelegate.swift */,
@@ -139,6 +146,16 @@
 			children = (
 			);
 			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		7DE2443820F39921008F0B19 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				7DE2443920F39955008F0B19 /* AppConfig.swift */,
+				7DE2443B20F3999F008F0B19 /* UIView+Extension.swift */,
+				7DE2443D20F39B60008F0B19 /* UIViewController+Extension.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE2443A20F39955008F0B19 /* AppConfig.swift in Sources */,
 				7DE2440B20F39781008F0B19 /* ViewController.swift in Sources */,
+				7DE2443C20F3999F008F0B19 /* UIView+Extension.swift in Sources */,
+				7DE2443E20F39B60008F0B19 /* UIViewController+Extension.swift in Sources */,
 				7DE2440920F39781008F0B19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

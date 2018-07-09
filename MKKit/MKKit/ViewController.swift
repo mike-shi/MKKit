@@ -25,7 +25,22 @@ class ViewController: UITableViewController {
         return arr.count
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        cell?.textLabel?.text = arr[indexPath.row]
+        return cell ?? UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let className = arr[indexPath.row]
+        
+    }
     
     
 }
 
+extension NSObject {
+    class var nameOfClass: String {
+        return NSStringFromClass(self).components(separatedBy: ".").last! as String
+    }
+}
