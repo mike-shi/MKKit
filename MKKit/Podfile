@@ -12,5 +12,6 @@ target 'MKKit' do
   
   pod 'Moya/RxSwift'
   pod 'RxCocoa'
+  pod 'RxSwift'
 
 end

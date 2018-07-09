@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z6v-3I-4nQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Regex View Controller-->
+        <scene sceneID="eBe-du-IqV">
+            <objects>
+                <viewController id="Z6v-3I-4nQ" customClass="RegexViewController" customModule="MKKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TOW-bq-VSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-ef-7g4">
+                                <rect key="frame" x="20" y="269" width="335" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8yB-wn-cRh">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="c4N-Bs-Pbe">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="22"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhone" translatesAutoresizingMaskIntoConstraints="NO" id="HKz-zp-dQd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="4th-59-QIe"/>
+                                                            <constraint firstAttribute="height" constant="22" id="Czl-No-NHg"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NTU-dO-PMo">
+                                                        <rect key="frame" x="34" y="0.0" width="301" height="22"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKB-rE-RaN">
+                                                <rect key="frame" x="0.0" y="30" width="335" height="1"/>
+                                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="ye2-Sk-OoV" customClass="OnePixelConstant" customModule="CheBaobao" customModuleProvider="target"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wKB-rE-RaN" firstAttribute="leading" secondItem="8yB-wn-cRh" secondAttribute="leading" id="Gnf-TD-C3x"/>
+                                            <constraint firstItem="c4N-Bs-Pbe" firstAttribute="leading" secondItem="8yB-wn-cRh" secondAttribute="leading" id="KWp-gT-IU4"/>
+                                            <constraint firstAttribute="trailing" secondItem="wKB-rE-RaN" secondAttribute="trailing" id="c15-IU-kN9"/>
+                                            <constraint firstAttribute="trailing" secondItem="c4N-Bs-Pbe" secondAttribute="trailing" id="mFg-gG-dFf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkn-qx-g1f">
+                                        <rect key="frame" x="0.0" y="37" width="335" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DFW-PL-KfS">
+                                        <rect key="frame" x="0.0" y="43" width="335" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lI0-fQ-fZi">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="22"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPassword" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-7r-iFA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="1LF-s2-a4g"/>
+                                                            <constraint firstAttribute="width" constant="22" id="QeA-FF-zpY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入登录密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="96d-eo-XGP">
+                                                        <rect key="frame" x="34" y="0.0" width="301" height="22"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-Xt-sNY">
+                                                <rect key="frame" x="0.0" y="30" width="335" height="1"/>
+                                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="mPo-wR-wEQ" customClass="OnePixelConstant" customModule="CheBaobao" customModuleProvider="target"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="042-GJ-roh">
+                                        <rect key="frame" x="0.0" y="86" width="335" height="44"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.81568627449999997" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Jmp-a3-Hqn"/>
+                                        </constraints>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2pA-ef-7g4" firstAttribute="centerX" secondItem="TOW-bq-VSQ" secondAttribute="centerX" id="cmU-6T-Zxg"/>
+                            <constraint firstItem="2pA-ef-7g4" firstAttribute="centerY" secondItem="TOW-bq-VSQ" secondAttribute="centerY" id="jaM-KP-d41"/>
+                            <constraint firstItem="2pA-ef-7g4" firstAttribute="leading" secondItem="PN2-Sa-iMl" secondAttribute="leading" constant="20" id="owL-Dz-htQ"/>
+                            <constraint firstItem="PN2-Sa-iMl" firstAttribute="trailing" secondItem="2pA-ef-7g4" secondAttribute="trailing" constant="20" id="qVd-vr-7nF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PN2-Sa-iMl"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneText" destination="NTU-dO-PMo" id="rwW-03-WUF"/>
+                        <outlet property="phoneTipLabel" destination="rkn-qx-g1f" id="ZLV-qm-E04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBA-SF-Vu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconPassword" width="22" height="22"/>
+        <image name="iconPhone" width="22" height="22"/>
+    </resources>
+</document>

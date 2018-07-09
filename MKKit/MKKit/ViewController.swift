@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: S4STableViewController {
     
-    let arr: [String] = [""]
+    let arr: [String] = ["RegexViewController"]
+    
+    let VC: [UIViewController] = [RegexViewController()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView.init()
+        self.title = "MKKit"
     }
-
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -33,11 +35,12 @@ class ViewController: S4STableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let className = arr[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+        let nameVC = arr[indexPath.row]
+        let vc = nameVC.convertToSB().instantiateInitialViewController() as! RegexViewController
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
-    
-    
 }
 
 extension NSObject {

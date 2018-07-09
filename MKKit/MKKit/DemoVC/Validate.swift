@@ -60,6 +60,13 @@ enum ValidatedType {
     }
 }
 
+func ValidateText(validated: ValidatedType, validateString: String) -> ValidateResult {
+    if validateString.length() < 8 {
+        return .normal
+    }
+    let pattern = validated.convertToPattern()
+    return validateString =~ pattern ? .correct : .error
+}
 
 
 

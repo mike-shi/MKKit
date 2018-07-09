@@ -28,6 +28,31 @@ extension String {
         return NSString(string: self).doubleValue
     }
     
+    func convertToSB() -> UIStoryboard {
+        return UIStoryboard.init(name: self, bundle: nil)
+    }
+    
+    /// 类文件字符串转换为ViewController
+    func convertToVC() -> UIViewController?{
+        // 1.获取命名空间
+        guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
+            print("命名空间不存在")
+            return nil
+        }
+        // 2.通过命名空间和类名转换成类
+        let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + self)
+        
+        // swift 中通过Class创建一个对象,必须告诉系统Class的类型
+        guard let clsType = cls as? UIViewController.Type else {
+            print("无法转换成UIViewController")
+            return nil
+        }
+        // 3.通过Class创建对象
+        let childController = clsType.init()
+        
+        return childController
+    }
+    
     func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
         
         let normalText: NSString = textStr as NSString

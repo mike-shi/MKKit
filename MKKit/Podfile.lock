@@ -18,6 +18,7 @@ DEPENDENCIES:
   - InputKit
   - Moya/RxSwift
   - RxCocoa
+  - RxSwift
   - SVProgressHUD
 
 SPEC REPOS:
@@ -39,6 +40,6 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: be14682913b785dc79b6a0cde75f049f8691efc3
+PODFILE CHECKSUM: 3a9fad0b4f64cfda3583e9ce271b214a2837f773
 
 COCOAPODS: 1.5.2
